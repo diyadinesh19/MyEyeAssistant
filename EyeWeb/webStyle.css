@@ -1,0 +1,214 @@
+  .heading{
+    font-size:90px;
+    width:100%;
+    background-color:rgba(3, 14, 37, 0.959);
+    color:white;
+    margin:0;
+    text-align:center;
+  }
+
+  .content{
+    display: grid;
+   grid-template-areas: 
+      "back time";
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #back {
+  grid-area: back;
+  /*border-radius:20px;
+  background-color: #CF9B34;
+  background-image: url("./Images/velvetBG.jpg");*/
+}
+#time { 
+  grid-area: time;
+ /* background-color:#CF5164;  
+  //border-radius:20px;   */
+  background-image: url("./Images/velvetBG.jpg");
+  display: grid;
+  grid-template-areas: 
+    "exer"
+    "clock"
+    "startDone";
+  grid-template-rows: 30% 40% 10%;
+  /*height: 100vh;
+  margin: 0;
+  grid-gap:20px;*/
+  /*grid-row-gap: 10px;*/
+}
+#startDone{
+  grid-area:startDone;
+  /*border-radius:20px;
+  //background-color: #E8CF84;
+  margin:10px 20px;*/
+  margin: 50px;
+}
+#clock{
+  grid-area:clock;
+  border-radius:20px;
+  background-color: #9BD1E8;
+  margin:10px 20px;
+}
+
+#start{
+  display: block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+ /* margin: 0px 30px;*/
+}
+#start:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.demo{
+  font-size: 150px;
+  color:#D18658;
+  text-align:center;
+  font-weight:20px;
+  padding: 70px 0 0 0;
+}
+.letter{
+  font-size: 75px;
+  color:#D18658;
+  text-align:center;
+  font-weight:20px;
+  padding: 70px 0 0 0;
+}
+#todayDate{
+  color:#233482;
+}
+
+.exerHead{
+  margin:0 auto;
+  text-align:center;
+  font-size: 100px;
+  color: #233482;
+}
+
+#exer{
+  grid-area:exer;
+  /*border-radius:20px;
+  background-color: #CF5164;*/
+  display: grid;
+  grid-template-areas: 
+      "bar desc";
+    grid-template-columns: 1fr 1fr;
+}
+
+.animation{
+  margin:auto;
+  width:200px;
+  height:200px;
+  display:none;
+}
+.bar{
+  grid-area:bar;
+}
+.desc{
+  grid-area:desc;
+  margin:5px;
+}
+.explain{
+  font-size:30px;
+  color:white;
+  display:none;
+}
+.scan{
+  font-size:20px;
+  color:white;
+  display:none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  }
+
+
+.tab{
+  display: grid;
+  grid-template-areas: 
+      "use stat mark eye";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+  left:0;
+  bottom:0;
+  width:50%;
+  background-color: black;
+  color:white;
+}
+  .eyeModel{
+    font-size:25px;
+    grid-area:eye;
+    text-align:center;
+  }
+  .background{
+    font-size:25px;
+    grid-area:use;
+    text-align:center;
+  }
+  .stats{
+    font-size:25px;
+    grid-area:stat;
+    text-align:center;
+  }
+  .marker{
+    font-size:25px;
+    grid-area:mark;
+    text-align:center;
+  }
+
+
+  .use{
+    color:black;
+    font-size: 17px;
+    padding:2px;
+  }
+  .statContent{
+    display: none;
+  }
+  .mark{
+    display: none;
+
+  }
+  .model{
+    display: none;
+    margin:0 auto;
+  }
+body{overflow: hidden;}
+
+
+.headCon{
+  text-align:center;
+  font-size:17px;
+  font-weight:bold;
+}
+
+.statList{
+  margin:10px;
+  font-size:15px;
+}
+
+ol{
+  font-size:20px;
+}
+
+.liInstr{
+  /*float: left; width: 50%; padding: 2px 0px;*/
+  font-size:15px;
+}
